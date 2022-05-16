@@ -6,7 +6,7 @@ services:
      dockerfile: Dockerfile
    volumes:
      - ./:/src
-   command: sh -c "PORT=3001 yarn start"
+   command: sh -c "yarn add react-scripts && PORT=3001 yarn start"
    ports:
      - "3001:3001"
    stdin_open: true
